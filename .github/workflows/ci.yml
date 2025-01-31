@@ -3,7 +3,7 @@ name: CI Pipeline
 on:
   push:
     branches:
-      - master  # Executa quando houver push na branch master
+      - master 
 
 jobs:
   build:
@@ -16,7 +16,7 @@ jobs:
       - name: Instalar Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18  # Ajuste conforme sua versão do Node.js
+          node-version: 18.19.1
 
       - name: Instalar dependências
         run: npm install
